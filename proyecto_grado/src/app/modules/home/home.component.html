@@ -1,0 +1,43 @@
+<app-homeheader></app-homeheader>
+
+
+    <div class= "row">
+        <div class= "col-8 p-3"><app-slider></app-slider></div>
+        <div class= "col-4 p-3"><app-login></app-login></div>
+    </div>
+
+<div class="container mt-3 mb-3">
+
+
+    <div class="title mb-4 text-center">
+
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">LISTA DE PROYECTOS</button>
+        </div>
+
+    </div>
+    
+    <div class="row  ">
+        
+        <div class="col text-center ">
+            <div class="list-group">
+            
+             <ul>
+
+                <button type="button" *ngFor="let item of Projects" class="list-group-item list-group-item-action active" aria-current="true">{{item.nombre}} </button>
+     
+
+
+             </ul>
+                
+            </div>
+            
+
+        </div>
+        
+    </div>
+</div>
+
+
+<app-main></app-main>
+<app-homefooter></app-homefooter>
