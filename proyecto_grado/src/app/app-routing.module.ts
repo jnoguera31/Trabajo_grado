@@ -1,10 +1,14 @@
+import { UserComponent } from './modules/user/user.component';
 import { HomeModule } from './modules/home/home.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { environment } from 'src/environments/environment';
 
+
 const routes: Routes = [
-  { path: '', loadChildren: () => import('./modules/home/home.module').then( m => m.HomeModule )}
+  { path: '', loadChildren: () => import('./modules/home/home.module').then( m => m.HomeModule )},
+  { path: 'home', loadChildren: () => import('./modules/home/home.module').then( m => m.HomeModule )}
+  
 
 ];
 
